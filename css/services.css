@@ -1,0 +1,339 @@
+/* =========================================================
+   SERVICES PAGE HERO
+========================================================= */
+
+.page-hero {
+    width: 100%;
+
+    padding: 75px 20px 65px;
+
+    background: linear-gradient(
+        112deg,
+        #edf7ff 0%,
+        #f5faff 55%,
+        #e7f3ff 100%
+    );
+
+    text-align: center;
+}
+
+.page-hero .eyebrow {
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.page-hero h1 {
+    font-size: clamp(38px, 5vw, 64px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    color: #0b2558;
+
+    margin-bottom: 20px;
+}
+
+.page-hero h1 span {
+    color: #1769e4;
+}
+
+.page-hero p {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    color: #44516b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.services-section {
+    width: 100%;
+
+    padding: 65px 0 80px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.service-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+    width: 100%;
+    min-width: 0;
+
+    min-height: 320px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e9f3;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 14px rgba(20, 55, 100, 0.08);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(20, 55, 100, 0.13);
+
+    border-color: #c9dcf5;
+}
+
+
+/* =========================================================
+   SERVICE ICON
+========================================================= */
+
+.service-icon {
+    width: 72px;
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 16px;
+
+    background: #edf5ff;
+
+    overflow: hidden;
+}
+
+.service-icon img {
+    width: 52px;
+    height: 52px;
+
+    max-width: 100%;
+
+    object-fit: contain;
+
+    display: block;
+
+    transition: transform 0.25s ease;
+}
+
+.service-card:hover .service-icon img {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.service-card h3 {
+    width: 100%;
+
+    min-height: 48px;
+
+    font-size: 18px;
+
+    line-height: 1.35;
+
+    color: #10244b;
+
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    width: 100%;
+
+    max-width: 300px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    color: #44516b;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CARD LINK
+========================================================= */
+
+.card-link {
+    margin-top: auto;
+
+    color: #1261d9;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.card-link:hover {
+    color: #0b2a62;
+
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .page-hero {
+        padding: 60px 20px 55px;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(36px, 6vw, 52px);
+
+        letter-spacing: -1px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+    .service-card {
+        min-height: 310px;
+
+        padding: 28px 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .page-hero {
+        padding: 50px 15px 45px;
+    }
+
+    .page-hero .eyebrow {
+        font-size: 13px;
+    }
+
+    .page-hero h1 {
+        font-size: 38px;
+
+        line-height: 1.12;
+
+        letter-spacing: -1px;
+    }
+
+    .page-hero p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .services-section {
+        padding: 40px 0 55px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .service-card {
+        min-height: 0;
+
+        padding: 28px 20px;
+    }
+
+    .service-icon {
+        width: 68px;
+        height: 68px;
+    }
+
+    .service-icon img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .service-card h3 {
+        min-height: 0;
+
+        font-size: 17px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .page-hero h1 {
+        font-size: 33px;
+    }
+
+    .service-card {
+        padding: 25px 16px;
+    }
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Choose Your Plan</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+
+            margin: 0;
+
+            padding: 0;
+
+            font-family: Arial, sans-serif;
+        }
+
+
+        body {
+
+            background: #f5f6f8;
+
+            min-height: 100vh;
+
+            padding: 40px 20px;
+        }
+
+
+        .header {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+        }
+
+
+        .header h1 {
+
+            font-size: 36px;
+
+            color: #222;
+
+            margin-bottom: 10px;
+        }
+
+
+        .header p {
+
+            color: #666;
+
+            font-size: 17px;
+        }
+
+
+        .plans {
+
+            max-width: 1200px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap: 20px;
+        }
+
+
+        .plan {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 30px 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.1);
+
+            position: relative;
+
+            transition: 0.3s;
+        }
+
+
+        .plan:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.2);
+        }
+
+
+        .popular {
+
+            border: 3px solid #f2c811;
+        }
+
+
+        .badge {
+
+            position: absolute;
+
+            top: -14px;
+
+            left: 50%;
+
+            transform:
+                translateX(-50%);
+
+            background: #f2c811;
+
+            padding: 6px 15px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+
+            font-weight: bold;
+        }
+
+
+        .plan h2 {
+
+            margin-bottom: 15px;
+
+            color: #333;
+        }
+
+
+        .price {
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            color: #222;
+
+            margin-bottom: 5px;
+        }
+
+
+        .price span {
+
+            font-size: 14px;
+
+            color: #777;
+        }
+
+
+        .description {
+
+            color: #777;
+
+            margin-bottom: 25px;
+
+            min-height: 40px;
+        }
+
+
+        .features {
+
+            list-style: none;
+
+            margin-bottom: 25px;
+
+            text-align: left;
+        }
+
+
+        .features li {
+
+            padding: 8px 0;
+
+            border-bottom:
+                1px solid #eee;
+
+            font-size: 14px;
+        }
+
+
+        .button {
+
+            display: block;
+
+            width: 100%;
+
+            padding: 12px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            background: #f2c811;
+
+            color: #222;
+
+            transition: 0.2s;
+        }
+
+
+        .button:hover {
+
+            background: #dcb400;
+        }
+
+
+        .trial {
+
+            background: #222;
+
+            color: white;
+        }
+
+
+        .trial .price {
+
+            color: #f2c811;
+        }
+
+
+        .trial .description {
+
+            color: #ccc;
+        }
+
+
+        .trial .features li {
+
+            border-color: #444;
+        }
+
+
+        .trial .button {
+
+            background: #f2c811;
+        }
+
+
+        @media(max-width: 1000px) {
+
+            .plans {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+        @media(max-width: 600px) {
+
+            .plans {
+
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+
+                font-size: 28px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="header">
+
+    <h1>Choose Your Plan</h1>
+
+    <p>
+        Start with a 7-day free trial.
+        Upgrade whenever you are ready.
+    </p>
+
+</div>
+
+
+<div class="plans">
+
+
+    <!-- FREE TRIAL -->
+
+    <div class="plan trial">
+
+        <h2>Free Trial</h2>
+
+        <div class="price">
+
+            ₹0
+
+            <span>/ 7 days</span>
+
+        </div>
+
+
+        <p class="description">
+
+            Try all features free for 7 days
+
+        </p>
+
+
+        <ul class="features">
+
+            <li>✓ Full Access</li>
+
+            <li>✓ All Features</li>
+
+            <li>✓ No Payment Required</li>
+
+            <li>✓ 7 Days Access</li>
+
+        </ul>
+
+
+        <a href="#" class="button">
+
+            Start Free Trial
+
+        </a>
+
+    </div>
+
+
+
+    <!-- 1 MONTH -->
+
+    <div class="plan">
+
+        <h2>1 Month</h2>
+
+        <div class="price">
+
+            ₹99
+
+            <span>/ month</span>
+
+        </div>
+
+
+        <p class="description">
+
+            Perfect for getting started
+
+        </p>
+
+
+        <ul class="features">
+
+            <li>✓ Full Access</li>
+
+            <li>✓ All Features</li>
+
+            <li>✓ Priority Support</li>
+
+            <li>✓ 1 Month Access</li>
+
+        </ul>
+
+
+        <a
+            href="YOUR_1_MONTH_PAYMENT_LINK"
+            class="button">
+
+            Pay ₹99
+
+        </a>
+
+    </div>
+
+
+
+    <!-- 3 MONTH -->
+
+    <div class="plan popular">
+
+        <div class="badge">
+
+            POPULAR
+
+        </div>
+
+
+        <h2>3 Months</h2>
+
+        <div class="price">
+
+            ₹250
+
+            <span>/ 3 months</span>
+
+        </div>
+
+
+        <p class="description">
+
+            Great value for regular users
+
+        </p>
+
+
+        <ul class="features">
+
+            <li>✓ Full Access</li>
+
+            <li>✓ All Features</li>
+
+            <li>✓ Priority Support</li>
+
+            <li>✓ 3 Months Access</li>
+
+        </ul>
+
+
+        <a
+            href="YOUR_3_MONTH_PAYMENT_LINK"
+            class="button">
+
+            Pay ₹250
+
+        </a>
+
+    </div>
+
+
+
+    <!-- 6 MONTH -->
+
+    <div class="plan">
+
+        <h2>6 Months</h2>
+
+        <div class="price">
+
+            ₹499
+
+            <span>/ 6 months</span>
+
+        </div>
+
+
+        <p class="description">
+
+            Save more with a longer plan
+
+        </p>
+
+
+        <ul class="features">
+
+            <li>✓ Full Access</li>
+
+            <li>✓ All Features</li>
+
+            <li>✓ Priority Support</li>
+
+            <li>✓ 6 Months Access</li>
+
+        </ul>
+
+
+        <a
+            href="YOUR_6_MONTH_PAYMENT_LINK"
+            class="button">
+
+            Pay ₹499
+
+        </a>
+
+    </div>
+
+
+
+    <!-- 1 YEAR -->
+
+    <div class="plan">
+
+        <h2>1 Year</h2>
+
+        <div class="price">
+
+            ₹999
+
+            <span>/ year</span>
+
+        </div>
+
+
+        <p class="description">
+
+            Best value for long-term users
+
+        </p>
+
+
+        <ul class="features">
+
+            <li>✓ Full Access</li>
+
+            <li>✓ All Features</li>
+
+            <li>✓ Priority Support</li>
+
+            <li>✓ 12 Months Access</li>
+
+        </ul>
+
+
+        <a
+            href="YOUR_1_YEAR_PAYMENT_LINK"
+            class="button">
+
+            Pay ₹999
+
+        </a>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
