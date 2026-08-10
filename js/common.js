@@ -1,39 +1,60 @@
-const menuBtn = document.getElementById("menuBtn");
-const mainNav = document.getElementById("mainNav");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (menuBtn && mainNav) {
+  /* =========================================
+     FOOTER YEAR
+  ========================================= */
 
-    menuBtn.addEventListener("click", function () {
+  const yearElement = document.getElementById("year");
 
-        mainNav.classList.toggle("open");
-
-        const isOpen = mainNav.classList.contains("open");
-
-        menuBtn.setAttribute(
-            "aria-label",
-            isOpen ? "Close menu" : "Open menu"
-        );
-
-    });
+  if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+  }
 
 
-    // Close menu after clicking a navigation link
+  /* =========================================
+     MOBILE MENU
+  ========================================= */
 
-    mainNav.querySelectorAll("a").forEach(function (link) {
+  const menuBtn = document.getElementById("menuBtn");
+  const mainNav = document.getElementById("mainNav");
 
-        link.addEventListener("click", function () {
-            mainNav.classList.remove("open");
-        });
+  if (menuBtn && mainNav) {
 
-    });
+      menuBtn.addEventListener("click", function () {
 
-}
+          const isOpen =
+              mainNav.classList.toggle("open");
+
+          menuBtn.setAttribute(
+              "aria-expanded",
+              isOpen ? "true" : "false"
+          );
+
+          menuBtn.innerHTML =
+              isOpen ? "✕" : "☰";
+
+      });
 
 
-// Footer year
+      /* Close menu when clicking a link */
 
-const yearElement = document.getElementById("year");
+      mainNav.querySelectorAll("a").forEach(function (link) {
 
-if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-}
+          link.addEventListener("click", function () {
+
+              mainNav.classList.remove("open");
+
+              menuBtn.setAttribute(
+                  "aria-expanded",
+                  "false"
+              );
+
+              menuBtn.innerHTML = "☰";
+
+          });
+
+      });
+
+  }
+
+});
