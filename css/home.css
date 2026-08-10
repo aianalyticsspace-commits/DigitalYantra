@@ -1,6 +1,1387 @@
-.hero{min-height:512px;background:linear-gradient(112deg,#edf7ff,#f5faff 55%,#e7f3ff);position:relative;overflow:hidden}.hero-grid{min-height:512px;display:grid;grid-template-columns:40% 60%;align-items:center;position:relative;z-index:2}.hero-shape{position:absolute;border-radius:50%;background:rgba(183,218,250,.35)}.shape-1{width:480px;height:480px;left:-230px;bottom:-390px}.shape-2{width:60px;height:60px;left:38%;top:115px}.hero-content{padding:38px 0}.hero h1{font-size:clamp(48px,4.1vw,65px);line-height:1.02;letter-spacing:-2px;color:#0b2558;margin-bottom:22px}.hero h1 span{color:#1769e4}.hero p{max-width:560px;color:#1e2d4c;font-size:17px;line-height:1.65;margin-bottom:29px}.hero-actions{display:flex;gap:18px}
-.device-scene{height:480px;position:relative;display:flex;align-items:center;justify-content:center}.laptop{width:690px;position:relative;filter:drop-shadow(0 15px 15px rgba(10,45,90,.2))}.laptop-screen{height:390px;border:12px solid #080f19;border-radius:22px 22px 11px 11px;background:#fff;overflow:hidden}.laptop-base{width:735px;height:20px;background:linear-gradient(#9c9fa2,#45484b);border-radius:0 0 55% 55%;margin-left:-22px;box-shadow:0 8px 7px rgba(0,0,0,.2)}.screen-sidebar{position:absolute;width:56px;top:12px;bottom:32px;background:#071e49;color:#fff;display:flex;flex-direction:column;align-items:center;gap:20px;padding-top:12px;font-size:15px}.mini-logo{width:25px;height:25px;background:#fff;color:#0d4ba3;display:flex;align-items:center;justify-content:center;font-weight:900;border-radius:4px}.dashboard{margin-left:56px;padding:15px;height:100%;background:#fbfcfe}.dash-title{font-size:12px;font-weight:700;margin-bottom:12px}.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{background:#fff;border:1px solid #f0f2f6;border-radius:5px;padding:8px;box-shadow:0 1px 3px rgba(0,0,0,.03)}.stat small{display:block;font-size:6px;color:#555;margin-bottom:5px}.stat strong{display:block;font-size:10px;color:#111;margin-bottom:4px}.stat i{font-size:6px;color:#18a447;font-style:normal;font-weight:700}.stat i.plain{color:#666;font-weight:400}.chart-row{display:grid;grid-template-columns:1.65fr 1fr;gap:8px;margin-top:8px}.panel{background:#fff;border:1px solid #f0f2f6;border-radius:5px;padding:8px;min-height:115px}.panel-head{font-size:7px;font-weight:700;margin-bottom:8px;color:#222}.line-chart{height:88px;position:relative;color:#2169dc}.line-chart svg{width:100%;height:75px;position:absolute;top:0;left:0}.grid-lines{position:absolute;inset:0 0 20px;background:repeating-linear-gradient(to bottom,transparent 0 16px,#edf1f7 17px)}.months{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:space-between;font-size:5px;color:#777}.donut-wrap{display:flex;align-items:center;gap:13px}.donut{width:68px;height:68px;border-radius:50%;background:conic-gradient(#1466da 0 35%,#f68c1f 35% 56%,#8e39d1 56% 80%,#27b04b 80% 100%);position:relative}.donut::after{content:"";position:absolute;inset:17px;background:#fff;border-radius:50%}.legend{display:flex;flex-direction:column;gap:6px;font-size:6px;color:#555}.legend span{display:flex;align-items:center;gap:4px}.legend b{width:6px;height:6px;background:#1968dd;display:inline-block}.legend span:nth-child(2) b{background:#8d38d0}.legend span:nth-child(3) b{background:#f28a1d}.legend span:nth-child(4) b{background:#24ad4d}.bars{display:flex;flex-direction:column;gap:6px;font-size:6px}.bars label{display:flex;align-items:center;gap:6px;color:#444}.bars i{height:8px;background:#1667dc;display:block;border-radius:1px}.growth-bars{height:73px;display:flex;align-items:end;gap:7px;border-bottom:1px solid #ddd;padding:0 7px}.growth-bars i{flex:1;background:#58bcb3;border-radius:2px 2px 0 0;max-width:14px}.phone{position:absolute;right:-18px;bottom:24px;width:150px;height:330px;background:#111;border-radius:27px;padding:7px;box-shadow:0 10px 18px rgba(0,0,0,.25);z-index:5}.phone-notch{position:absolute;top:7px;left:48px;width:54px;height:12px;background:#111;border-radius:0 0 10px 10px;z-index:3}.phone-screen{background:#fff;border-radius:21px;height:100%;padding:39px 12px 10px;color:#1d1d1d}.phone-screen small{display:block;font-size:6px;margin:5px 0;color:#555}.phone-screen strong{display:block;font-size:10px}.phone-screen em{font-size:6px;color:#20a44c;font-style:normal;margin-left:7px}.phone-line{height:50px;margin:7px 0 8px;border-bottom:2px solid #2870dc;transform:skewY(-8deg);opacity:.8}.phone-bars{display:flex;align-items:end;height:55px;gap:4px;margin-top:8px}.phone-bars i{width:8px;background:#4fb9ae;height:25%;border-radius:2px 2px 0 0}.phone-bars i:nth-child(2){height:35%}.phone-bars i:nth-child(3){height:42%}.phone-bars i:nth-child(4){height:50%}.phone-bars i:nth-child(5){height:57%}.phone-bars i:nth-child(6){height:65%}.phone-bars i:nth-child(7){height:74%}.phone-bars i:nth-child(8){height:82%}.phone-bars i:nth-child(9){height:92%}.phone-bars i:nth-child(10){height:80%}.phone-growth{background:#1464da;color:#fff;border-radius:6px;margin-top:11px;padding:8px;font-size:6px}.phone-growth b{display:block;font-size:12px;margin-top:5px}
-.home-intro{padding:58px 0;background:#fff}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-grid h2{font-size:34px;line-height:1.2;color:#0c2b63}.intro-grid p{font-size:16px;line-height:1.75;color:#45546d}
-@media(max-width:1250px){.hero-grid{grid-template-columns:42% 58%}.laptop{transform:scale(.86);transform-origin:center}.phone{right:-5px;transform:scale(.88);transform-origin:bottom right}}
-@media(max-width:1000px){.hero-grid{grid-template-columns:1fr;min-height:auto;padding-top:25px}.hero-content{text-align:center;padding:35px 0 15px}.hero-content .eyebrow{justify-content:center}.hero p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.device-scene{height:420px}.service-grid{grid-template-columns:repeat(2,1fr)}.intro-grid{grid-template-columns:1fr;gap:20px;text-align:center}}
-@media(max-width:650px){.hero h1{font-size:43px;letter-spacing:-1px}.hero p{font-size:15px}.hero-actions{flex-direction:column;gap:12px;padding:0 30px}.btn{width:100%}.device-scene{height:300px}.laptop{transform:scale(.48);width:690px}.phone{transform:scale(.58);right:-10px;bottom:-2px}.intro-grid h2{font-size:28px}}
+/* =========================================================
+   HOME PAGE - RESPONSIVE CSS
+   ========================================================= */
+
+/* ---------- GLOBAL SAFETY ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+.container {
+    width: min(1180px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+    min-height: 512px;
+    background: linear-gradient(
+        112deg,
+        #edf7ff,
+        #f5faff 55%,
+        #e7f3ff
+    );
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-grid {
+    min-height: 512px;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+}
+
+.hero-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(183, 218, 250, 0.35);
+    pointer-events: none;
+}
+
+.shape-1 {
+    width: 480px;
+    height: 480px;
+    left: -230px;
+    bottom: -390px;
+}
+
+.shape-2 {
+    width: 60px;
+    height: 60px;
+    left: 38%;
+    top: 115px;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.hero-content {
+    padding: 38px 0;
+    min-width: 0;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 4.1vw, 65px);
+    line-height: 1.02;
+    letter-spacing: -2px;
+    color: #0b2558;
+    margin: 0 0 22px;
+}
+
+.hero h1 span {
+    color: #1769e4;
+}
+
+.hero p {
+    max-width: 560px;
+    color: #1e2d4c;
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0 0 29px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   DEVICE SCENE
+   ========================================================= */
+
+.device-scene {
+    width: 100%;
+    min-width: 0;
+
+    height: 480px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   LAPTOP
+   ========================================================= */
+
+.laptop {
+    width: min(690px, 100%);
+    max-width: 690px;
+
+    position: relative;
+
+    filter: drop-shadow(
+        0 15px 15px rgba(10, 45, 90, 0.20)
+    );
+
+    transform: none;
+}
+
+.laptop-screen {
+    width: 100%;
+
+    /*
+       Keeps laptop screen proportional
+       instead of fixed 390px height.
+    */
+    aspect-ratio: 690 / 390;
+
+    height: auto;
+
+    border: clamp(5px, 1vw, 12px) solid #080f19;
+
+    border-radius: 22px 22px 11px 11px;
+
+    background: #fff;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.laptop-base {
+    width: 106.5%;
+    height: 20px;
+
+    background: linear-gradient(
+        #9c9fa2,
+        #45484b
+    );
+
+    border-radius: 0 0 55% 55%;
+
+    margin-left: -3.25%;
+
+    box-shadow:
+        0 8px 7px rgba(0, 0, 0, 0.20);
+}
+
+
+/* =========================================================
+   LAPTOP SIDEBAR
+   ========================================================= */
+
+.screen-sidebar {
+    position: absolute;
+
+    width: 56px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    background: #071e49;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    padding-top: 12px;
+
+    font-size: 15px;
+
+    z-index: 2;
+}
+
+.mini-logo {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    background: #fff;
+    color: #0d4ba3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 900;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   DASHBOARD
+   ========================================================= */
+
+.dashboard {
+    margin-left: 56px;
+
+    width: calc(100% - 56px);
+    height: 100%;
+
+    padding: 15px;
+
+    background: #fbfcfe;
+
+    overflow: hidden;
+}
+
+.dash-title {
+    font-size: 12px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   STAT CARDS
+   ========================================================= */
+
+.stat-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 8px;
+}
+
+.stat {
+    min-width: 0;
+
+    background: #fff;
+
+    border: 1px solid #f0f2f6;
+
+    border-radius: 5px;
+
+    padding: 8px;
+
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.03);
+
+    overflow: hidden;
+}
+
+.stat small {
+    display: block;
+
+    font-size: 6px;
+
+    color: #555;
+
+    margin-bottom: 5px;
+
+    white-space: nowrap;
+}
+
+.stat strong {
+    display: block;
+
+    font-size: 10px;
+
+    color: #111;
+
+    margin-bottom: 4px;
+
+    white-space: nowrap;
+}
+
+.stat i {
+    font-size: 6px;
+
+    color: #18a447;
+
+    font-style: normal;
+
+    font-weight: 700;
+}
+
+.stat i.plain {
+    color: #666;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   CHARTS
+   ========================================================= */
+
+.chart-row {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(0, 1fr);
+
+    gap: 8px;
+
+    margin-top: 8px;
+
+    min-width: 0;
+}
+
+.panel {
+    min-width: 0;
+
+    background: #fff;
+
+    border: 1px solid #f0f2f6;
+
+    border-radius: 5px;
+
+    padding: 8px;
+
+    min-height: 115px;
+
+    overflow: hidden;
+}
+
+.panel-head {
+    font-size: 7px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+    color: #222;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LINE CHART
+   ========================================================= */
+
+.line-chart {
+    height: 88px;
+
+    position: relative;
+
+    color: #2169dc;
+
+    min-width: 0;
+}
+
+.line-chart svg {
+    width: 100%;
+    height: 75px;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+}
+
+.grid-lines {
+    position: absolute;
+
+    inset: 0 0 20px;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            transparent 0 16px,
+            #edf1f7 17px
+        );
+}
+
+.months {
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+    right: 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 5px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   DONUT
+   ========================================================= */
+
+.donut-wrap {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    min-width: 0;
+}
+
+.donut {
+    width: 68px;
+    height: 68px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #1466da 0 35%,
+            #f68c1f 35% 56%,
+            #8e39d1 56% 80%,
+            #27b04b 80% 100%
+        );
+
+    position: relative;
+}
+
+.donut::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 17px;
+
+    background: #fff;
+
+    border-radius: 50%;
+}
+
+.legend {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    font-size: 6px;
+
+    color: #555;
+
+    min-width: 0;
+}
+
+.legend span {
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    white-space: nowrap;
+}
+
+.legend b {
+    width: 6px;
+    height: 6px;
+
+    background: #1968dd;
+
+    display: inline-block;
+
+    flex-shrink: 0;
+}
+
+.legend span:nth-child(2) b {
+    background: #8d38d0;
+}
+
+.legend span:nth-child(3) b {
+    background: #f28a1d;
+}
+
+.legend span:nth-child(4) b {
+    background: #24ad4d;
+}
+
+
+/* =========================================================
+   BARS
+   ========================================================= */
+
+.bars {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    font-size: 6px;
+}
+
+.bars label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #444;
+
+    min-width: 0;
+}
+
+.bars label i {
+    height: 8px;
+
+    background: #1667dc;
+
+    display: block;
+
+    border-radius: 1px;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   GROWTH BARS
+   ========================================================= */
+
+.growth-bars {
+    height: 73px;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 7px;
+
+    border-bottom: 1px solid #ddd;
+
+    padding: 0 7px;
+
+    overflow: hidden;
+}
+
+.growth-bars i {
+    flex: 1;
+
+    background: #58bcb3;
+
+    border-radius: 2px 2px 0 0;
+
+    max-width: 14px;
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+.phone {
+    position: absolute;
+
+    right: -18px;
+    bottom: 24px;
+
+    width: 150px;
+    height: 330px;
+
+    background: #111;
+
+    border-radius: 27px;
+
+    padding: 7px;
+
+    box-shadow:
+        0 10px 18px rgba(0, 0, 0, 0.25);
+
+    z-index: 5;
+}
+
+.phone-notch {
+    position: absolute;
+
+    top: 7px;
+    left: 48px;
+
+    width: 54px;
+    height: 12px;
+
+    background: #111;
+
+    border-radius:
+        0 0 10px 10px;
+
+    z-index: 3;
+}
+
+.phone-screen {
+    background: #fff;
+
+    border-radius: 21px;
+
+    height: 100%;
+
+    padding:
+        39px 12px 10px;
+
+    color: #1d1d1d;
+
+    overflow: hidden;
+}
+
+.phone-screen small {
+    display: block;
+
+    font-size: 6px;
+
+    margin: 5px 0;
+
+    color: #555;
+}
+
+.phone-screen strong {
+    display: block;
+
+    font-size: 10px;
+}
+
+.phone-screen em {
+    font-size: 6px;
+
+    color: #20a44c;
+
+    font-style: normal;
+
+    margin-left: 7px;
+}
+
+.phone-line {
+    height: 50px;
+
+    margin:
+        7px 0 8px;
+
+    border-bottom:
+        2px solid #2870dc;
+
+    transform:
+        skewY(-8deg);
+
+    opacity: 0.8;
+}
+
+.phone-bars {
+    display: flex;
+
+    align-items: end;
+
+    height: 55px;
+
+    gap: 4px;
+
+    margin-top: 8px;
+}
+
+.phone-bars i {
+    width: 8px;
+
+    background: #4fb9ae;
+
+    height: 25%;
+
+    border-radius:
+        2px 2px 0 0;
+}
+
+.phone-bars i:nth-child(2) {
+    height: 35%;
+}
+
+.phone-bars i:nth-child(3) {
+    height: 42%;
+}
+
+.phone-bars i:nth-child(4) {
+    height: 50%;
+}
+
+.phone-bars i:nth-child(5) {
+    height: 57%;
+}
+
+.phone-bars i:nth-child(6) {
+    height: 65%;
+}
+
+.phone-bars i:nth-child(7) {
+    height: 74%;
+}
+
+.phone-bars i:nth-child(8) {
+    height: 82%;
+}
+
+.phone-bars i:nth-child(9) {
+    height: 92%;
+}
+
+.phone-bars i:nth-child(10) {
+    height: 80%;
+}
+
+.phone-growth {
+    background: #1464da;
+
+    color: #fff;
+
+    border-radius: 6px;
+
+    margin-top: 11px;
+
+    padding: 8px;
+
+    font-size: 6px;
+}
+
+.phone-growth b {
+    display: block;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   INTRO SECTION
+   ========================================================= */
+
+.home-intro {
+    padding: 58px 0;
+
+    background: #fff;
+}
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.intro-grid h2 {
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    color: #0c2b63;
+
+    margin-top: 10px;
+}
+
+.intro-grid p {
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #45546d;
+}
+
+
+/* =========================================================
+   LARGE TABLET
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hero-grid {
+        grid-template-columns:
+            42% 58%;
+    }
+
+    .phone {
+        right: -5px;
+
+        transform:
+            scale(0.88);
+
+        transform-origin:
+            bottom right;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        padding-top: 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+
+        padding:
+            35px 0 15px;
+    }
+
+    .hero-content .eyebrow {
+        justify-content: center;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    /*
+       Important:
+       Device now follows screen width.
+    */
+    .device-scene {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        padding:
+            25px 0 60px;
+
+        overflow: visible;
+    }
+
+    .laptop {
+        width: min(690px, 88vw);
+    }
+
+    .phone {
+        right: 0;
+
+        bottom: 25px;
+
+        transform:
+            scale(0.75);
+
+        transform-origin:
+            bottom right;
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .container {
+        width:
+            calc(100% - 24px);
+    }
+
+    .hero {
+        min-height: auto;
+
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        width: 100%;
+
+        padding-top: 5px;
+    }
+
+    .hero-content {
+        padding:
+            28px 5px 10px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        line-height: 1.05;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 18px;
+    }
+
+    .hero p {
+        font-size: 15px;
+
+        line-height: 1.6;
+
+        margin-bottom: 22px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+
+        gap: 12px;
+
+        width: 100%;
+
+        padding: 0 10px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------
+       RESPONSIVE DASHBOARD
+       ----------------------------------------- */
+
+    .device-scene {
+
+        width: 100%;
+
+        padding:
+            20px 0 25px;
+
+        display: block;
+
+        min-height: 0;
+    }
+
+    .laptop {
+
+        /*
+           This is the most important fix.
+           Laptop is now based on viewport width.
+        */
+
+        width: 100%;
+
+        max-width: 100%;
+
+        transform: none;
+
+        filter:
+            drop-shadow(
+                0 10px 10px
+                rgba(10, 45, 90, 0.18)
+            );
+    }
+
+    .laptop-screen {
+
+        /*
+           Automatically calculates height
+           based on laptop width.
+        */
+
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio:
+            690 / 390;
+
+        border-width: 6px;
+
+        border-radius:
+            12px 12px 7px 7px;
+    }
+
+    .laptop-base {
+
+        width: 106%;
+
+        height: 10px;
+
+        margin-left: -3%;
+
+        border-radius:
+            0 0 50% 50%;
+    }
+
+
+    /* Sidebar becomes smaller */
+
+    .screen-sidebar {
+
+        width: 30px;
+
+        gap: 9px;
+
+        padding-top: 7px;
+
+        font-size: 8px;
+    }
+
+    .mini-logo {
+
+        width: 16px;
+
+        height: 16px;
+
+        font-size: 9px;
+
+        border-radius: 2px;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard {
+
+        margin-left: 30px;
+
+        width:
+            calc(100% - 30px);
+
+        padding: 7px;
+    }
+
+    .dash-title {
+
+        font-size: 7px;
+
+        margin-bottom: 5px;
+    }
+
+
+    /* Stats */
+
+    .stat-row {
+
+        gap: 4px;
+    }
+
+    .stat {
+
+        padding: 4px;
+
+        border-radius: 3px;
+    }
+
+    .stat small {
+
+        font-size: 3.5px;
+
+        margin-bottom: 2px;
+    }
+
+    .stat strong {
+
+        font-size: 6px;
+
+        margin-bottom: 2px;
+    }
+
+    .stat i {
+
+        font-size: 3.5px;
+    }
+
+
+    /* Charts */
+
+    .chart-row {
+
+        gap: 4px;
+
+        margin-top: 4px;
+    }
+
+    .panel {
+
+        min-height: 70px;
+
+        padding: 4px;
+
+        border-radius: 3px;
+    }
+
+    .panel-head {
+
+        font-size: 4px;
+
+        margin-bottom: 4px;
+    }
+
+    .line-chart {
+
+        height: 52px;
+    }
+
+    .line-chart svg {
+
+        height: 44px;
+    }
+
+    .months {
+
+        font-size: 3px;
+    }
+
+    .grid-lines {
+
+        inset:
+            0 0 12px;
+    }
+
+
+    /* Donut */
+
+    .donut-wrap {
+
+        gap: 5px;
+    }
+
+    .donut {
+
+        width: 38px;
+
+        height: 38px;
+    }
+
+    .donut::after {
+
+        inset: 10px;
+    }
+
+    .legend {
+
+        gap: 3px;
+
+        font-size: 3.5px;
+    }
+
+    .legend b {
+
+        width: 4px;
+
+        height: 4px;
+    }
+
+
+    /* Product bars */
+
+    .bars {
+
+        gap: 3px;
+
+        font-size: 3.5px;
+    }
+
+    .bars label {
+
+        gap: 3px;
+    }
+
+    .bars label i {
+
+        height: 4px;
+    }
+
+
+    /* Growth */
+
+    .growth-bars {
+
+        height: 45px;
+
+        gap: 3px;
+
+        padding:
+            0 3px;
+    }
+
+    .growth-bars i {
+
+        max-width: 7px;
+    }
+
+
+    /*
+       IMPORTANT:
+       Hide phone on small mobile.
+
+       The phone is decorative and causes
+       horizontal clipping on narrow screens.
+    */
+
+    .phone {
+
+        display: none;
+    }
+
+
+    /* Intro */
+
+    .home-intro {
+
+        padding:
+            40px 0;
+    }
+
+    .intro-grid {
+
+        gap: 15px;
+    }
+
+    .intro-grid h2 {
+
+        font-size: 28px;
+
+        line-height: 1.25;
+    }
+
+    .intro-grid p {
+
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+
+        font-size: 36px;
+    }
+
+    .hero p {
+
+        font-size: 14px;
+    }
+
+    .hero-actions {
+
+        padding:
+            0 5px;
+    }
+
+    .device-scene {
+
+        padding-top: 15px;
+    }
+
+    .laptop-screen {
+
+        border-width: 5px;
+    }
+
+    .screen-sidebar {
+
+        width: 25px;
+
+        gap: 7px;
+    }
+
+    .dashboard {
+
+        margin-left: 25px;
+
+        width:
+            calc(100% - 25px);
+
+        padding: 5px;
+    }
+
+    .mini-logo {
+
+        width: 14px;
+
+        height: 14px;
+
+        font-size: 8px;
+    }
+
+    .stat {
+
+        padding: 3px;
+    }
+
+    .stat small {
+
+        font-size: 3px;
+    }
+
+    .stat strong {
+
+        font-size: 5px;
+    }
+
+    .stat i {
+
+        font-size: 3px;
+    }
+
+    .panel {
+
+        padding: 3px;
+    }
+}
