@@ -62,7 +62,7 @@ svg {
 .brand-logo {
     width: 470px;
     height: 100px;
-    max-width: none;
+    max-width: 100%;
     display: block;
     object-fit: contain;
 
