@@ -10,6 +10,7 @@
 
 .page-hero {
     padding: 75px 0 70px;
+
     background: linear-gradient(
         135deg,
         #f4f9ff 0%,
@@ -31,8 +32,10 @@
     margin-bottom: 16px;
 
     color: #1769e0;
+
     font-size: 13px;
     font-weight: 800;
+
     letter-spacing: 0.5px;
 }
 
@@ -51,6 +54,7 @@
     color: #0c2d63;
 
     font-size: clamp(38px, 5vw, 60px);
+
     line-height: 1.08;
 
     letter-spacing: -1.5px;
@@ -68,6 +72,7 @@
     color: #526581;
 
     font-size: 17px;
+
     line-height: 1.7;
 }
 
@@ -78,6 +83,7 @@
 
 .about-section {
     padding: 90px 0;
+
     background: #ffffff;
 }
 
@@ -186,6 +192,7 @@
     height: 25px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -234,10 +241,16 @@
         0 20px 50px rgba(25, 70, 120, 0.08);
 
     overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
-/* Decorative circle */
+/* =========================================================
+   DECORATIVE CIRCLES
+   ========================================================= */
 
 .about-card::before {
     content: "";
@@ -253,10 +266,10 @@
     border-radius: 50%;
 
     background: rgba(23, 105, 224, 0.08);
+
+    pointer-events: none;
 }
 
-
-/* Second decorative circle */
 
 .about-card::after {
     content: "";
@@ -272,69 +285,44 @@
     border-radius: 50%;
 
     background: rgba(23, 105, 224, 0.05);
+
+    pointer-events: none;
 }
 
 
 /* =========================================================
-   ABOUT CARD ICON
+   DIGITALYANTRA LOGO
    ========================================================= */
 
-.about-card-icon {
+.about-logo {
     position: relative;
-
-    width: 65px;
-    height: 65px;
+    z-index: 2;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 24px;
+    width: 100%;
 
-    background: #1769e0;
+    min-height: 150px;
 
-    color: #ffffff;
-
-    border-radius: 16px;
-
-    font-size: 22px;
-    font-weight: 800;
-
-    box-shadow:
-        0 10px 25px rgba(23, 105, 224, 0.22);
+    padding: 5px 0 20px;
 }
 
 
-/* =========================================================
-   ABOUT CARD TEXT
-   ========================================================= */
+.about-logo img {
+    display: block;
 
-.about-card h3 {
-    position: relative;
+    width: 220px;
 
-    margin: 0;
+    max-width: 100%;
 
-    color: #0c2d63;
+    height: auto;
 
-    font-size: 30px;
+    object-fit: contain;
 
-    letter-spacing: -0.5px;
-}
-
-.about-card > p {
-    position: relative;
-
-    margin: 5px 0 25px;
-
-    color: #60728d;
-
-    font-size: 14px;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1.5px;
-
-    font-weight: 700;
+    border-radius: 8px;
 }
 
 
@@ -345,9 +333,11 @@
 .about-divider {
     position: relative;
 
+    z-index: 2;
+
     height: 1px;
 
-    margin: 25px 0;
+    margin: 10px 0 20px;
 
     background: #d5e3f2;
 }
@@ -359,6 +349,8 @@
 
 .about-stat {
     position: relative;
+
+    z-index: 2;
 
     display: flex;
 
@@ -393,14 +385,8 @@
 
 
 /* =========================================================
-   HOVER EFFECT
+   CARD HOVER EFFECT
    ========================================================= */
-
-.about-card {
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
 
 .about-card:hover {
     transform: translateY(-6px);
@@ -420,9 +406,11 @@
         padding: 60px 0;
     }
 
+
     .about-section {
         padding: 70px 0;
     }
+
 
     .about-grid {
         grid-template-columns: 1fr;
@@ -430,9 +418,11 @@
         gap: 50px;
     }
 
+
     .about-content {
         max-width: 100%;
     }
+
 
     .about-card {
         max-width: 600px;
@@ -454,11 +444,13 @@
         padding: 45px 0 50px;
     }
 
+
     .page-hero h1 {
         font-size: 36px;
 
         letter-spacing: -0.8px;
     }
+
 
     .page-hero p {
         font-size: 15px;
@@ -489,7 +481,9 @@
     }
 
 
-    /* Stack points */
+    /* -----------------------------------------
+       STACK ABOUT POINTS
+       ----------------------------------------- */
 
     .about-points {
         grid-template-columns: 1fr;
@@ -500,7 +494,9 @@
     }
 
 
-    /* About card */
+    /* -----------------------------------------
+       ABOUT CARD
+       ----------------------------------------- */
 
     .about-card {
         padding: 35px 28px;
@@ -509,21 +505,32 @@
     }
 
 
-    .about-card h3 {
-        font-size: 27px;
+    /* -----------------------------------------
+       LOGO
+       ----------------------------------------- */
+
+    .about-logo {
+        min-height: 130px;
+
+        padding: 5px 0 18px;
     }
 
 
-    .about-card-icon {
-        width: 58px;
-        height: 58px;
-
-        font-size: 20px;
+    .about-logo img {
+        width: 200px;
     }
 
+
+    /* -----------------------------------------
+       STATISTICS
+       ----------------------------------------- */
 
     .about-stat strong {
         font-size: 22px;
+    }
+
+    .about-stat span {
+        font-size: 13px;
     }
 }
 
@@ -538,13 +545,26 @@
         font-size: 32px;
     }
 
+
     .about-content h2 {
         font-size: 28px;
     }
 
+
     .about-card {
         padding: 30px 22px;
     }
+
+
+    .about-logo {
+        min-height: 115px;
+    }
+
+
+    .about-logo img {
+        width: 180px;
+    }
+
 
     .about-stat span {
         font-size: 13px;
