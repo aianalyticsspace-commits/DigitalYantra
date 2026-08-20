@@ -49,91 +49,31 @@ svg {
 
 .brand {
     display: flex;
-
     align-items: center;
-
     justify-content: flex-start;
-
     text-decoration: none;
-
     flex-shrink: 0;
-
     height: 100%;
 }
 
 
+/* Main Logo - Static / No Animation */
+
 .brand-logo {
-
-    /*
-       Increased logo size
-    */
-
     width: 170px;
-
     height: auto;
-
     max-width: none;
-
     display: block;
-
     object-fit: contain;
 
-
     /*
-       Original JPG contains white background.
-       This makes white areas visually blend
-       into the white website header.
+       The original logo image is a JPG with a white background.
+       Multiply makes the white area visually blend into the
+       white website header. For true transparency, use a
+       PNG/WebP logo with a transparent background.
     */
-
     mix-blend-mode: multiply;
-
-
-    /*
-       Professional entrance animation
-    */
-
-    animation:
-        logoAppear 0.8s ease-out both;
-
-
-    transition:
-        transform 0.25s ease,
-        opacity 0.25s ease;
 }
-
-
-/*
-   Subtle professional hover
-*/
-
-.brand:hover .brand-logo {
-
-    transform:
-        scale(1.035);
-}
-
-
-@keyframes logoAppear {
-
-    from {
-
-        opacity: 0;
-
-        transform:
-            translateY(-6px);
-
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform:
-            translateY(0);
-
-    }
-}
-
 
 
 /* =========================================================
