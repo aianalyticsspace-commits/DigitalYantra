@@ -270,7 +270,6 @@
     pointer-events: none;
 }
 
-
 .about-card::after {
     content: "";
 
@@ -296,11 +295,13 @@
 
 .about-logo {
     position: relative;
+
     z-index: 2;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     width: 100%;
@@ -308,21 +309,62 @@
     min-height: 150px;
 
     padding: 5px 0 20px;
+
+    background: transparent;
+
+    overflow: visible;
 }
 
+
+/* =========================================================
+   LOGO IMAGE
+   ========================================================= */
 
 .about-logo img {
     display: block;
 
     width: 220px;
 
-    max-width: 100%;
-
     height: auto;
+
+    max-width: 100%;
 
     object-fit: contain;
 
-    border-radius: 8px;
+    background: transparent;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    opacity: 1;
+
+    visibility: visible;
+
+    animation: none !important;
+
+    transition: none !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   REMOVE ANY OLD LOGO EFFECTS
+   ========================================================= */
+
+.about-logo img:hover {
+    animation: none !important;
+
+    transition: none !important;
+
+    transform: none !important;
+
+    opacity: 1;
+
+    filter: none;
 }
 
 
@@ -513,11 +555,33 @@
         min-height: 130px;
 
         padding: 5px 0 18px;
+
+        background: transparent;
+
+        overflow: visible;
     }
 
 
     .about-logo img {
         width: 200px;
+
+        max-width: 90%;
+
+        height: auto;
+
+        background: transparent;
+
+        border: none;
+
+        border-radius: 0;
+
+        box-shadow: none;
+
+        animation: none !important;
+
+        transition: none !important;
+
+        transform: none !important;
     }
 
 
@@ -558,11 +622,25 @@
 
     .about-logo {
         min-height: 115px;
+
+        background: transparent;
     }
 
 
     .about-logo img {
         width: 180px;
+
+        max-width: 90%;
+
+        height: auto;
+
+        background: transparent;
+
+        animation: none !important;
+
+        transition: none !important;
+
+        transform: none !important;
     }
 
 
